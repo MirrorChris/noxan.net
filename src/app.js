@@ -16,11 +16,15 @@ angular.module("noxan").config(["$stateProvider", "$urlRouterProvider", "$locati
     },
     template: require("./partials/home.jade")
   }).state("home.work", {
-    url: "^/work",
-    params: {
-      scrollTo: "work"
-    },
-    template: require("./partials/home.jade")
+    url: "^/work?id",
+    params: { scrollTo: "work" },
+    views: {
+      "projects": {
+        controller: "ProjectController",
+        controllerAs: "selected",
+        template: require("./partials/home.work.project.jade")
+      }
+    }
   }).state("home.technology", {
     url: "^/technology",
     params: {

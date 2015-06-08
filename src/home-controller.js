@@ -8,3 +8,9 @@ angular.module("noxan").controller("HomeController", [function () {
     return project;
   });
 }]);
+
+angular.module("noxan").controller("ProjectController", ["$stateParams", "$scope", function ($stateParams, $scope) {
+  this.project = $scope.ctrl.projects.filter(function (project) {
+    return project.slug === $stateParams.id;
+  })[0];
+}]);

@@ -9,10 +9,10 @@ section#work
   .container
     h1 Work
     .projects
-      .project(ng-repeat="project in ctrl.projects")
+      a.project(ui-sref="home.work({id: project.slug})" ng-repeat="project in ctrl.projects")
         .image(background-image="{{project.image}}")
         h3 {{project.name}}
-    .clearfix
+    .clearfix(ui-view="projects")
 section#technology
   .container
     h1 Technology

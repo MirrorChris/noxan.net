@@ -1,13 +1,16 @@
 [
   {
     "name": "moonid",
+    "slug": "moonid",
     "website": "http://www.moonid.net",
     "image": "https://noxan.github.io/images/projects/moonid.jpg"
   }, {
     "name": "myBraintraining",
+    "slug": "mbt",
     "website": "http://www.mybraintraining.com",
     "image": "https://noxan.github.io/images/projects/mybraintraining.jpg"
   }, {
-    "name": "Speedlane"
+    "name": "Speedlane",
+    "slug": "speedlane"
   }
 ]
